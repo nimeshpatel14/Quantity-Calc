@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: white;
+  width: 100%;
+  height: 65px;
+  background-color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+.header-left a{
+  width: 55px;
+  height: 50px;
+}
+.header-left img{
+  width: 100%;
+  height: 100%;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  font-family: "Playwrite NG Modern", cursive;
+}
+
+.header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-right: 32px;
+  font-size: 1rem;
+  font-family: "Playwrite DE Grund", cursive;
+}
+.header-right div {
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 17%;
+  background-color: rgba(30, 41, 59, 0.87);
+}
+
+.sidebar ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 8px 0;
+  padding: 8px 0;
+  font-size: 1.2rem;
+}
+
+.sidebar li a {
+  font-family: "Playwrite DE Grund", cursive;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sidebar li a:hover {
+  text-shadow: 2px 2px 5px #3fe2ff;
+}
+
+.sidebar li img {
+  width: 30px;
+  height: 30px;
+}
+
+.main-content {
+  width: 83%;
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  text-align: center;
+}
+
+.form-title {
+  margin-top: 15px;
+  margin-bottom: 16px;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 13px;
+}
+
+.input-field {
+  width: 192px;
+  padding: 8px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+}
+/* Brickwork CSS */
+.brickwork-input-field {
+  width: 270px;
+  padding: 8px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+}
+.custom-width-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.brickwork-form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 13px;
+}
+.brickwork-custom-input {
+  width: 140px;
+  padding: 8px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+}
+.brickwork-custom-select {
+  width: 55px;
+  padding: 8px 4px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+}
+/* Brickwork CSS */
+
+/*Mortar CSS*/
+.mortar-form-title{
+  margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+.mortar-form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px;
+  font-size: 15px;
+}
+.mortar-table-container{
+  overflow-x: auto;
+  margin-top: 25px;
+
+}
+/*Mortar CSS*/
+
+/*Putty CSS*/
+.putty-input-field {
+  width: 130px;
+  padding: 8px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+}
+/*Putty CSS*/
+
+.select-field {
+  width: 70px;
+  padding: 8px 4px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+}
+
+.button {
+  width: 176px;
+  padding: 8px;
+  margin: 10px 0 20px 0;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.table th,
+.table td {
+  border: 1px solid #475569;
+  padding: 8px;
+  background-color: white;
+}
+
+.table th {
+  background-color: #cbd5e1;
+  color: #1e293b;
+}
+
+.note {
+  margin-top: 20px;
+}
+
+.home-content{
+  width: 83%;
+  background-color: #f1f5f9;
+  padding: 80px 80px;
+  text-align: center;
+}
+.home-content h3, .message{
+  font-family: "Playwrite DE Grund", cursive;
+}
+.home-content div{
+  font-size: 1.2rem;
+}
+.home-btn{
+  font-family: "Playwrite DE Grund", cursive;
+  margin-top:40px ;
+  font-weight: 700;
+}
+.home-btn button{
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 15px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 8px; /* Rounded corners */
+  transition-duration: 0.4s; /* Transition effect */
+}
+.home-btn button:hover{
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+  border: 2px solid #4CAF50; /* Green border on hover */
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .header {
+    justify-content: center;
+  }
+  .header-left {
+    margin-left: 0px;
+  }
+
+  .header-logo {
+    width: 45px;
+    height: 50px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .sidebar li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 9px;
+  }
+
+  .sidebar ul {
+    margin: auto;
+    list-style-type: none;
+  }
+
+  .sidebar li {
+    margin: 20px 0;
+    padding: 5px 0;
+  }
+  .sidebar {
+    background-color: rgba(30, 41, 59, 0.774);
+  }
+
+  .input-field {
+    font-size: 15px;
+    width: 175px;
+  }
+
+  .brickwork-input-field {
+    width: 252px;
+  }
+  .custom-width-flexbox {
+    display: block;
+    
+  }
+  .brickwork-form-group {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .brickwork-custom-input {
+    width: 175px;
+    padding: 5px;
+  }
+
+  .brickwork-custom-select {
+    width: 60px;
+    padding: 5px 4px;
+  }
+  .mortar-form-title{
+      margin-bottom: 16px;
+  }
+  .mortar-form-group {
+    gap: 8px;
+    margin: 13px;
+  }
+  .mortar-table-container{
+    margin-top: 40px;
+  
+  }
+  .putty-input-field {
+    width: 120px;
+  }
+  .note {
+    margin: 20px;
+  }
+  .home-content{
+    padding: 30px 10px;
+  }
+  .home-title{
+    font-size: 1.1rem;
+
+  }
+  .home-content div{
+    font-size: 1rem;
+  }
+  
+}
